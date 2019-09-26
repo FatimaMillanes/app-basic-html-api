@@ -1,29 +1,24 @@
-/*
 
-const makeupApiUrl = 'http://makeup-api.herokuapp.com/api/v1/products';
-const makeupFrontImg = document.getElementById('makeup-container');
+const imgContainer = document.getElementById('makeup-container');
 
 
-let getMakeupData = async ()=> {
-const respose = await fetch(`${makeupApiUrl}.json?id=1`);
-    const makeup = await respose.json();
+let getInfo = async () => {
+    const response = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?id=1')
+    const makeup = await response.json();
+    let flag = 0;
     console.log(makeup);
-
-    i =makeup;
-    for(let i=0;i<10;i++){
-       
-        const frontImg = makeup.image_link;
-        makeupFrontImg.innerHTML += `<img src="${frontImg}"`;
+    makeup.some(element =>{
+        const theImg = element.image_link;
+        imgContainer.innerHTML += `<h1><img src="${theImg}" class="img-makeup"></h1>`
+        flag++;
+        if(flag === 20){
+            return element === element;
+           
+        }         
+    });
     
-    };
-    
-};
-
-getMakeupData();
-
-
-
-*/
+}
+getInfo();
 
 
 
@@ -33,20 +28,11 @@ getMakeupData();
 
 
 
-
-
-
-
-
-
-
-
+/*
 
 
 const makeupName = document.getElementById('name');
 const makeupBrand = document.getElementById('header');
-const makeupFrontImg = document.getElementById('image_link');
-
 
 const makeupApiUrl = 'http://makeup-api.herokuapp.com/api/v1/products';
 
@@ -56,18 +42,18 @@ let getMakeupData = async ()=> {
    
     console.log(makeup);
 
-    const frontImg = makeup.image_link;
     const name = makeup.name;
     const header= makeup.brand;
     makeupBrand.innerText = makeup.brand;
-    makeupName.innerText = makeup.name;
-    makeupFrontImg.src = frontImg;
-   
+    makeupName.innerText = makeup.name;   
 
 
 };
-
 getMakeupData();
+
+
+
+
 
 const makeupName2 = document.getElementById('name2');
 const makeupBrand2 = document.getElementById('header2');
@@ -92,3 +78,5 @@ const respose = await fetch(`${makeupApiUrl}/1046.json`);
 };
 
 getMakeupDatas();
+
+*/

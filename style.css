@@ -66,12 +66,33 @@ nav ul li a{
     margin-top: 350px;
 }
 
+.welcome1{
+    font-size: 35px;
+    color: whitesmoke;
+    margin-top: 500px;
+    border-color: rgb(134, 134, 134);
+    position: absolute;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.welcome2{
+    font-size: 35px;
+    color: whitesmoke;
+    margin-top: 800px;
+    border-color: rgb(134, 134, 134);
+    position: absolute;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 1200px;
+}
 
 .footnote{
     height: 30px;
     width: 100%;
     position: absolute;
-    margin-top: 100%;
+    margin-top: 40%;
     background-color:#e7e7e7e1;
     left: 0%;
     margin-left: center;
@@ -158,4 +179,75 @@ div{
     z-index: -500;
     margin-top: 650px;
     left: 50%;
+}
+.img10{
+   
+    position: absolute;
+ 
+    width:17%;
+
+    z-index: -500;
+    margin-top: 350px;
+    left: 27%;
+}
+
+.img11{
+   
+    position: absolute;
+ 
+    width:17%;
+
+    z-index: -500;
+    margin-top: -900px;
+    left: 8.5%;
+}
+
+.img12{
+   
+    position: absolute;
+ 
+    width:17%;
+
+    z-index: -500;
+    margin-top: -750px;
+    left: 38.5%;
+}
+
+.img13{
+   
+    position: absolute;
+ 
+    width:17%;
+
+    z-index: -500;
+    margin-top: -750px;
+    left: 68.5%;
+}
+
+
+.tip2{
+    font-size: 35px;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 2%;
+    text-align: justify;
+    margin-top: 2400px;
+}
+
+.tip3{
+    font-size: 35px;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 32%;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.tip4{
+    font-size: 35px;
+    color: whitesmoke;
+    position: relative;
+    margin-left: 65%;
+    text-align: justify;
+    margin-top: 100px;
 }
